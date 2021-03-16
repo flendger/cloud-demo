@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: feign-client
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    fetch-registry: true
+server:
+  port: 13540
+  servlet:
+    context-path: /demoservice
+
+
